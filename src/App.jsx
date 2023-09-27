@@ -1,6 +1,18 @@
+// App.jsx
 import { useEffect, useState } from "react";
 import "./App.css";
 import Card from "./Components/Card";
+
+
+import item1 from './assets/images/item-1.png';
+import item2 from './assets/images/item-2.png';
+import item3 from './assets/images/item-3.png';
+import item4 from './assets/images/item-4.png';
+import item5 from './assets/images/item-5.png';
+import item6 from './assets/images/item-6.png';
+
+const IMAGES = [item1, item2, item3, item4, item5, item6]
+
 
 function App() {
   const [cards, setCards] = useState([]);
@@ -8,14 +20,10 @@ function App() {
   const [choiceOne, setChoiceOne] = useState(null);
   const [choiceTwo, setChoiceTwo] = useState(null);
 
-  const cardImages = [
-    { src: "/item-1.png", matched : false },
-    { src: "/item-2.png", matched : false },
-    { src: "/item-3.png", matched : false },
-    { src: "/item-4.png", matched : false },
-    { src: "/item-5.png", matched : false },
-    { src: "/item-6.png", matched : false },
-  ];
+  const cardImages = IMAGES.map((item, index) => {
+    return {src: item, matched: false}
+  })
+
 
   function shuffleImg() {
     const shuffledImages = [...cardImages, ...cardImages]
@@ -87,7 +95,11 @@ function App() {
           namingClass = {namingClass}
           />
       </div>
-      <div className="turns">{turns}</div>
+      <div className="turns">
+        <div>Turns</div>
+        <div>-</div>
+        <div>{turns}</div>
+      </div>
     </div>
   );
 }

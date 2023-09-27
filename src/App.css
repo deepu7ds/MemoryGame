@@ -33,9 +33,10 @@
 }
 
 .turns{
-    width: 100px;
+    width: 120px;
     height: 40px;
     display: flex;
+    gap: 10px;
     font-family: 'Lilita One', cursive;
     font-size: 1.2rem;
     border: none;

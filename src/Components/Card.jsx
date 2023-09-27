@@ -1,4 +1,5 @@
 import "./card.css";
+import cardImage from "../assets/images/cover-img.png";
 
 function Card({ cards, choiceHandler, namingClass }) {
   return (
@@ -7,7 +8,7 @@ function Card({ cards, choiceHandler, namingClass }) {
         <div className={`card ${namingClass(card)}`} key={card.id}>
             <img
               className="cover"
-              src="cover-img.png"
+              src={cardImage} 
               alt="Check Your Connection Bitch"
               onClick={() => choiceHandler(card)}
             />
