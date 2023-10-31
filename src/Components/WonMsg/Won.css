@@ -1,0 +1,14 @@
+.won-container{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size:2rem;   
+    gap: 10px;
+}
+won-container div{
+}

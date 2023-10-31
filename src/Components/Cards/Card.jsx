@@ -1,5 +1,5 @@
 import "./card.css";
-import cardImage from "../assets/images/cover-img.png";
+import cardImage from "./cover-img.png";
 
 function Card({ cards, choiceHandler, namingClass }) {
   return (
