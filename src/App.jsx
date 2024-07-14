@@ -106,7 +106,7 @@ function App() {
   } else {
       return (
         <div className="header">
-          {start && <h1 className="header__heading">Memory Game</h1>}
+          {start && !result && <h1 className="header__heading">Memory Game</h1>}
           {start && !result && (
             <button className="header__button" onClick={shuffleImg}>
               Reset

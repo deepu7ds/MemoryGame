@@ -1,4 +1,4 @@
-import "./card.css";
+import "./Card.css";
 import cardImage from "./cover-img.png";
 
 function Card({ cards, choiceHandler, namingClass }) {
